@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\author{Simon Golz}
+
+\usepackage[
+  a4paper,
+  left=25mm,
+  right=25mm,
+  top=20mm,
+  bottom=20mm
+]{geometry}
+
+\usepackage{tgtermes}
+\renewcommand\rmdefault{qtm}
+
+\usepackage{blindtext}
+
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+\usepackage[
+  backend=biber,
+  style=apa
+]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage[
+  colorlinks=true,
+  citecolor=blue
+]{hyperref}
+
+\begin{document}
+  {\LARGE\noindent Building a Personal Productivity System: A Systematic Literature Review}
+  \vspace{5mm}
+  \hrule{}
+  \vspace{2mm}
+
+  {\footnotesize\noindent Simon Golz, Business Informatics Specialist \hfill{} Email: simon.golz@icloud.com}
+
+  \section*{Abstract}
+  \blindtext{}
+
+  \vspace{10mm}
+
+  \begin{multicols*}{2}
+    \section{Introduction}
+    \blindtext{}\blindtext{}\blindtext{}
+    \section{Motivation}
+    \blindtext{}\cite{Clear}\blindtext{}
+    \section{Types of People}
+    \blindtext{}\blindtext{}
+    \section{Tools and Toolchains}
+    \blindtext{}\blindtext{}
+    \section*{Conclusion}
+    \blindtext{}\blindtext{}
+    \printbibliography{}
+  \end{multicols*}
+\end{document}
